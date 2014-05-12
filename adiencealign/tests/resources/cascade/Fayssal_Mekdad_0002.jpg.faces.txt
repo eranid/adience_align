@@ -1,0 +1,2 @@
+x,y,dx,dy,score,angle,type
+61.0,62.0,132.0,132.0,344,0.0,haar

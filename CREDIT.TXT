@@ -1,0 +1,22 @@
+This implements a face alignment method, as preprocessing to tasks such as age and gender estimation, and face recognition as described in [5] and [6].
+
+The code calls an executable of facial landmarks detection, by X.Zhu and D. Ramanan, implementing the algorithm described in [1]. It includes pre-trained face models. Much of the detection code is built on top of part-based model implementation of [2]. The training code implements a quadratic program (QP) solver described in [3].
+
+In the training code, we use the positive samples from MultiPIE dataset (available at www.multipie.org) and the negative images from the INRIAPerson dataset [4] (included in the package). 
+
+Acknowledgements: We graciously thank the authors of the previous code releases and image benchmarks for making them publicly available.
+
+References
+==========
+
+[1] X. Zhu, D. Ramanan. Face Detection, Pose Estimation and Landmark Localization in the Wild. CVPR 2012.
+
+[2] P. Felzenszwalb, R. Girshick, D. McAllester. Discriminatively Trained Deformable Part Models. http://people.cs.uchicago.edu/~pff/latent.
+
+[3] D. Ramanan. Dual Coordinate Descent Solvers for Large Structured Prediction Problems. UCI Technical Report, to appear.
+
+[4] N. Dalal, B. Triggs. Histograms of Oriented Gradients for Human Detection. CVPR 2005.
+
+[5] E. Eidinger, R. Enbar, T. Hassner - TBD
+
+[6] TBD - http://www.openu.ac.il/home/hassner/  website link
