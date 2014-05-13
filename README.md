@@ -10,6 +10,13 @@ See the test for example usage.
 
 Specificaly, the "pipeline" test, shows how to use the full process (just remember to change the location of the model files to where you stor the *.xml and other model files)
 
+Installation
+=========
+in the root of the repository:
+1. run `python setup.py sdist'
+2. run 'sudo pip install dist/adience-<version_number>.tar.gz'
+
+
 CopyRight
 =========
 (contact: Eran Eidinger (eran@adience.com), Roee Enbar (roee.e@adience.com))
