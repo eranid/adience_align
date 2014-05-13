@@ -13,8 +13,12 @@ Specificaly, the "pipeline" test, shows how to use the full process (just rememb
 Installation
 =========
 in the root of the repository:
-1. run `python setup.py sdist'
-2. run 'sudo pip install dist/adience-<version_number>.tar.gz'
+
+```
+python setup.py sdist
+sudo pip install dist/adience-\<version_number\>.tar.gz
+```
+
 
 
 CopyRight
