@@ -16,7 +16,7 @@ in the root of the repository:
 
 ```
 python setup.py sdist
-sudo pip install dist/adience-\<version_number\>.tar.gz
+sudo pip install dist/adience-<version_number>.tar.gz
 ```
 
 
