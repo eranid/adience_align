@@ -3,7 +3,7 @@ and face recognition as described in [1] and [2].
 
 The code calls an executable of facial landmarks detection, by X.Zhu and D. Ramanan, implementing the algorithm described in [3]. 
 
-(The rest of this text is a quotation from their code:)
+(The rest of this text is a quotation from their code: Copyright (C) 2012 Xiangxin Zhu, Deva Ramanan)
 
 It includes pre-trained face models. 
 
