@@ -28,9 +28,11 @@ CopyRight
 See the LICENSE.txt file (basically, an MIT license).
 
 
-With any publication that uses this alignment code, or it's derivative, we kindly ask that you cite the project website: 
-http://www.openu.ac.il/home/hassner/Adience/links.html
+With any publication that uses this alignment code, or it's derivative, we kindly ask that you cite the paper:
+E. Eidinger, R. Enbar, and T. Hassner, Age and Gender Estimation of Unfiltered Faces, Transactions on Information Forensics and Security (IEEE-TIFS), special issue on Face Recognition in the Wild
 
+For more details, please see:
+http://www.openu.ac.il/home/hassner/Adience/publications.html
 
 Compilation notes
 ========
