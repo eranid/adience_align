@@ -8,9 +8,8 @@ import pickle
 import numpy as np
 from shapely.geometry.polygon import Polygon
 import math
-from adiencealign.common.files import make_path
+from adiencealign.common.files import make_path, expand_path
 from adiencealign.common.images import pad_image_for_rotation
-from adience.common.utils.utils import expand_path
 
 class CascadeDetector(object):
     '''

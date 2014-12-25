@@ -4,7 +4,6 @@ Created on May 7, 2014
 @author: eran
 '''
 import subprocess
-from adience.common.utils.fidu import read_fidu
 import os
 
 def detect_landmarks(fname, max_size = 400*400, min_size = 50*50, fidu_exec_dir = os.path.abspath('../resources/')):
