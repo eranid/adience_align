@@ -42,3 +42,8 @@ Compilation notes
 
 We will release the source code for the shared object in the near future
 
+Running the test
+========
+1. run ./clear_test.sh to delete results of old tests.
+2. run python test_pipeline.py
+3. results are in the "outputs" subfolder
