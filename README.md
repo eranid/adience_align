@@ -36,7 +36,8 @@ http://www.openu.ac.il/home/hassner/Adience/publications.html
 
 Compilation notes
 ========
-NOTE: The shared objects were compiled for linux 64bit on Ubuntu 13.10
+1. The shared objects were compiled for linux 64bit on Ubuntu 13.10
+2. The SO uses boost-1.53, so make sure it is installed on your system and available at /usr/local/, or use LD_LIBRARY_PATH="yourpath" to point it at the right place. Alternatively, place "libboost_system.so.1.53.0" and "libboost_filesystem.so.1.53.0". at the "adiencealign/resources/" subfolder
 
 We will release the source code for the shared object in the near future
 
