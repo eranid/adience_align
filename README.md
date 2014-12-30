@@ -38,6 +38,7 @@ Compilation notes
 ========
 1. The shared objects were compiled for linux 64bit on Ubuntu 13.10
 2. The SO uses boost-1.53, so make sure it is installed on your system and available at /usr/local/, or use LD_LIBRARY_PATH="yourpath" to point it at the right place. Alternatively, place "libboost_system.so.1.53.0" and "libboost_filesystem.so.1.53.0". at the "adiencealign/resources/" subfolder
+3. For landmarks detection, we use the file libPartsBasedDetector.so, compiled from the project https://github.com/wg-perception/PartsBasedDetector. You can either compile it yourselves, or use the version under "resources" subfolder, compiled with boost 1.53, on a linux ubuntu 14.04 machine.
 
 We will release the source code for the shared object in the near future
 
