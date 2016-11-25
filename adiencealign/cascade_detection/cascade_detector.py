@@ -57,11 +57,11 @@ class CascadeDetector(object):
         scaleFactor = self.scale_factor if not scaleFactor else scaleFactor
         minNeighbors = self.min_neighbors if not minNeighbors else minNeighbors
         minSize = self.min_size if not minSize else minSize
-        return self._cascade_classifier.detectMultiScaleWithScores(img, 
-                                                                   scaleFactor = scaleFactor, 
-                                                                   minNeighbors = minNeighbors, 
-                                                                   minSize = minSize, 
-                                                                   flags = flags)
+        return self._cascade_classifier.detectMultiScale(img, 
+                                                         scaleFactor = scaleFactor, 
+                                                         minNeighbors = minNeighbors, 
+                                                         minSize = minSize, 
+                                                         flags = flags)
         
     def detectWithAngles(self, img, angels = None, resolve = True, thr = None ):
         '''
@@ -96,11 +96,11 @@ class CascadeDetector(object):
             rot_image = cv2.warpAffine(big_image, rot_mat, (big_image.shape[1],big_image.shape[0]), flags=cv2.INTER_CUBIC)
             faces = self.detectMultiScaleWithScores(rot_image, scaleFactor = 1.03, minNeighbors = 20, minSize = (15,15), flags = 4)
             for face in faces:
-                xp = face[0][0]
-                dx = face[0][2]
-                yp = face[0][1]
-                dy = face[0][3]
-                score = face[1]
+                xp = face[0]
+                dx = face[2]
+                yp = face[1]
+                dy = face[3]
+                score = 1
                 dots = np.matrix([[xp,xp+dx,xp+dx,xp], [yp,yp,yp+dy,yp+dy], [1, 1, 1, 1]])
                 # these are the original coordinates in the "big_image"
 #                print dots
